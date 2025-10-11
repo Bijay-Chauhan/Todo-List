@@ -1,0 +1,11 @@
+.input-type{
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+    background-color: antiquewhite;
+}
+.markAll{
+    background-color: blue;
+}
