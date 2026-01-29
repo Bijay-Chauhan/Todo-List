@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -67,4 +67,86 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* =====================
+   CSS Reset
+   ===================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================
+   Root Variables
+   ===================== */
+:root {
+  --primary: #667eea;
+  --secondary: #764ba2;
+  --success: #4caf50;
+  --danger: #ff4d4d;
+  --text-dark: #333;
+  --bg-light: #f5f7fb;
+}
+
+/* =====================
+   Body Styling
+   ===================== */
+body {
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-dark);
+}
+
+/* =====================
+   Root Container
+   ===================== */
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* =====================
+   Smooth Rendering
+   ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =====================
+   Selection Color
+   ===================== */
+::selection {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* =====================
+   Scrollbar (Modern)
+   ===================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.85);
 }
